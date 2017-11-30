@@ -8,13 +8,7 @@ I would recommend this tutorial as a starting point on Alexa skills introducing 
 {
   "intents": [
     {
-      "slots": [
-        {
-          "name": "Day",
-          "type": "LIST_OF_DAYS"
-        }
-      ],
-      "intent": "DayIntent"
+      "intent": "DaysTilIntent"
     },
     {
       "intent": "AMAZON.HelpIntent"
@@ -22,24 +16,14 @@ I would recommend this tutorial as a starting point on Alexa skills introducing 
   ]
 }
 ```
-## Slots:
 
-LIST_OF_DAYS 
-```
-1
-2
-3
-4
-5
-6
-...
-30
-```
 
 ## Utterances:
 ```
-DayIntent Open day {Day}
-DayIntent Open door {Day}
-DayIntent What's in door {Day}
-DayIntent Advent door {Day}
+DaysTilIntent Days until Christmas
+DaysTilIntent Days until Santa
+DaysTilIntent How many days until Christmas
+DaysTilIntent Sleeps until Santa
+DaysTilIntent Sleeps until Christmas
+DaysTilIntent How many Sleeps until Santa
 ```
